@@ -16,24 +16,24 @@ spl_data <- spl_data %>%
 spl_data$Date <- as.Date(spl_data$Date, format = "%Y-%m-%d")
 
 # Create relevant data frame for each month
-material_data <- spl_data %>%
-  group_by(Date, MaterialType) %>%
+publisher_data <- spl_data %>%
+  group_by(Date, Publisher) %>%
   summarise(TotalCheckouts = sum(Checkouts))
 
-# Get top three checked out materials
-popular_materials <- material_data %>%
+# Get top three checked out publishers
+popular_publishers <- publisher_data %>%
   group_by(Date) %>%
   top_n(n = 3, wt = TotalCheckouts)
 
 # Create relevant plot
-ggplot(popular_materials) +
+ggplot(popular_publishers) +
   geom_line(mapping = aes(
     x = Date,
     y = TotalCheckouts,
-    color = MaterialType # sets color for each line
+    color = Publisher # sets color for each line
   )) +
   labs( # title and axis labels
-    title = "Checkouts for Popular Materials Over Time",
+    title = "Checkouts for Popular Publishers Over Time",
     x = "Month",
     y = "Number of Checkouts"
   ) +
