@@ -5,14 +5,11 @@ output: html_document
 
 ### Introduction
 
-An introduction of the data and a description of the trends/books/items you are choosing to analyze (and why!)
-
 The Seattle Public Library has available checkout data from 2005 to present. This data set provides a variety of information about checkouts for physical and electronic items. In this report, I am using a subset of this data, which covers all items checked out in 2022-2023 so far. I am focusing on exploring trends pertaining to checkouts for popular materials, publishers, and usage classes over the course of this specific time period. I chose these trends because they provide valuable insights about the preferences of Seattle Public Library patrons, as well as the materials and publishers that are most often checked out at SPL. Analyzing these trends can also provide insights about large-scale societal trends, such as shifts in the preferred medium of reading over the span of a year. This information can be useful not only for the SPL system, but also for researchers and policymakers analyzing literacy-related trends.
 
 ### Summary Information
 
 From 2022-2023 so far, the Seattle Public Library had a total of 9,196,991 checkouts. Of these checkouts, 55.9% were digital materials and 44.1% were physical materials. These percentages can help the library better understand the preferences of their patrons and can improve future development decisions. The month with the highest number of checkouts was January 2023, with 269,816 checkouts, while the lowest number of checkouts was in December 2022, with 212,354 books checked out. This information can help the library identify popular usage times and plan staffing and resource allocation accordingly.
-
 
 ### The Dataset
 
@@ -24,57 +21,23 @@ From 2022-2023 so far, the Seattle Public Library had a total of 9,196,991 check
 - What are possible limitations or problems with this data?   (at least 200 words)
 
 
-### First Trends Over Time Chart
-
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
-
-The first chart that you will create and include will show the trend over time of your variable/topic/interest. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Show more than one, but fewer than ~10 trends
-  - For example, two books, or 5 different mediums
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear - legend title
-In your .Rmd file, make sure to describe why you included the chart, and what patterns emerged
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
+### Materials Chart
 
 ``````{r, echo = FALSE, warning = FALSE, message = FALSE, code = readLines("A3Chart1.R")}
 ```
 
-### Second Trends Over Time Chart
+This chart explores trends in checkouts for books, ebooks, and audiobooks over the span of 2022 to the first month of 2023 (present). A line chart is suitable to represent this data since it shows trends and changes in the number of checkouts for each material type over time. It allows us to easily compare the performance of the different materials and to identify any patterns that may be emerging over time. From the chart, we can observe that there are fluctuations in the number of checkouts for each material type over the course of the year. For example, there seems to be a significant decline in checkouts in April of 2022, especially for audiobooks. This may be due to many COVID-19 related restrictions lifting during this month, which opened up avenues for patrons to continue other activities and thus spend less time reading. By analyzing these patterns, we can gain insights into the preferences of library patrons and how they may be changing over time. This information can help library managers make more informed decisions about resource allocation and future investments.
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
-
-The second chart that you will create and include will show another trend over time of your variable/topic/interest. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Show more than one, but fewer than ~10 trends
-  - For example, two books, or 5 different mediums
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear - legend title
-In your .Rmd file, make sure to describe why you included the chart, and what patterns emerged
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
+### Publishers Chart
 
 ``````{r, echo = FALSE, warning = FALSE, message = FALSE, code = readLines("A3Chart2.R")}
 ```
 
-### Your Choice
+This chart explores trends in checkouts for the top 3, most popular Publishers over the span of 2022 to the first month of 2023 (present) at SPL. A line chart is suitable to represent this data since it allows us to easily compare the trends in checkouts over time for each publisher. The three publishers being represented here are: Books of Tape, HarperCollins Publishers, Inc. and Random House, Inc. The line chart of the three publishers reveals that Books on Tape had the most checkouts overall and had a lot of fluctuation in checkouts for a large part of 2022. Each of the publishers saw a gradual increase in checkouts over the year, but of these, HarperCollins Publishers, Inc. had a relatively steady number of checkouts. Random House, Inc. had the fewest checkouts overall, but also showed a slight increase towards the end of the time period. We also see a sharp decline in checkouts during April 2022 for each publisher, which is likely due to many COVID restrictions lifting during that time period. Analyzing the trends in checkouts for each publisher can provide insights into which publishers are popular with library patrons and which ones may be growing or declining in popularity. This information can be useful for librarians and publishers alike in making decisions about book purchasing and marketing strategies.
 
-The last chart is up to you. It could be a line plot, scatter plot, histogram, bar plot, stacked bar plot, and more. Here are some requirements to help guide your design:
-
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear legend title
-
-Here's an example of how to run an R script inside an RMarkdown file:
+### Usage Class Chart
 
 ``````{r, echo = FALSE, warning = FALSE, message = FALSE, code = readLines("A3Chart3.R")}
 ```
 
-
+This chart displays the total number of checkouts and splits them according to the usage class they fall under. This data is best represented as a bar chart because it compares two distinct categories: digital materials and physical materials. We can clearly deduce patterns in this data by analyzing the length of each bar, as they represent the number of checkouts for each category. This data reveals that digital materials are relatively more popular than physical materials in terms of checkouts. Digital materials may be becoming more popular over time since more people have access to devices that allow them to easily borrow and read or listen to digital content. Obtaining and reading a physical copy may require more time and energy, while digital copies can be obtained in minutes. This information is important for libraries and publishers to understand as they consider their collections and marketing strategies. They may need to allocate more resources towards promoting digital content, or they may need to focus on promoting the benefits of physical materials to encourage more people to check them out.
