@@ -11,16 +11,8 @@ The Seattle Public Library has available checkout data from 2005 to present. Thi
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+From 2022-2023 so far, the Seattle Public Library had a total of 9,196,991 checkouts. Of these checkouts, 55.9% were digital materials and 44.1% were physical materials. These percentages can help the library better understand the preferences of their patrons and can improve future development decisions. The month with the highest number of checkouts was January 2023, with 269,816 checkouts, while the lowest number of checkouts was in December 2022, with 212,354 books checked out. This information can help the library identify popular usage times and plan staffing and resource allocation accordingly.
 
-These will likely be calculated using your DPLYR skills, answering questions such as:
-
-- What is the average number of checkouts for each item?
-- What is the month or year with the most/least checkouts for a book that you're interested in?
-- What is the month or year with the most/least checkouts for ebooks?
-- How has the number of print book checkouts changed over time?
-
-Feel free to calculate and report values that you find relevant.
 
 ### The Dataset
 
