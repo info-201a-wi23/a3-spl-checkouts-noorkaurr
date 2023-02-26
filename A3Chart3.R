@@ -35,4 +35,5 @@ ggplot(usage_data, aes(
     x = "Usage Class",
     y = "Number of Checkouts"
   ) +
-  scale_y_continuous(labels = label_number_si()) # abbreviates numbers
+  scale_y_continuous(labels = label_number_si()) + # abbreviates numbers
+  guides(fill = guide_legend(title = "Usage Class"))

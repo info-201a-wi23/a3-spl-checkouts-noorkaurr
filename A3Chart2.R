@@ -40,4 +40,5 @@ ggplot(popular_publishers) +
     x = "Month",
     y = "Number of Checkouts"
   ) +
-  scale_y_continuous(labels = label_number_si()) # abbreviates numbers
+  scale_y_continuous(labels = label_number_si()) + # abbreviates numbers
+  guides(color = guide_legend(title = "Publisher"))
