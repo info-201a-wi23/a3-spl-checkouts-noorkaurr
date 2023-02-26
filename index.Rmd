@@ -7,6 +7,8 @@ output: html_document
 
 An introduction of the data and a description of the trends/books/items you are choosing to analyze (and why!)
 
+The Seattle Public Library has available checkout data from 2005 to present. This data set provides a variety of information about checkouts for physical and electronic items. In this report, I am using a subset of this data, which covers all items checked out in 2022-2023 so far. I am focusing on exploring trends pertaining to checkouts for popular materials, publishers, and usage classes over the course of this specific time period. I chose these trends because they provide valuable insights about the preferences of Seattle Public Library patrons, as well as the materials and publishers that are most often checked out at SPL. Analyzing these trends can also provide insights about large-scale societal trends, such as shifts in the preferred medium of reading over the span of a year. This information can be useful not only for the SPL system, but also for researchers and policymakers analyzing literacy-related trends.
+
 ### Summary Information
 
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
