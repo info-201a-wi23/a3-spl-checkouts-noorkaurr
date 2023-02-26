@@ -32,6 +32,9 @@ ggplot(popular_materials) +
     y = TotalCheckouts,
     color = MaterialType # sets color for each line
   )) +
+  scale_color_manual(
+    values = c("#358DC0", "#1E5171", "#81C3D7")
+  ) +
   labs( # title and axis labels
     title = "Checkouts for Popular Materials Over Time",
     x = "Month",
