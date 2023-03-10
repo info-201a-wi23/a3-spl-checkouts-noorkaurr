@@ -8,8 +8,10 @@ output: html_document
 The Seattle Public Library has available checkout data from 2005 to present. This data set provides a variety of information about checkouts for physical and electronic items. In this report, I am using a subset of this data, which covers all items checked out in 2022-2023 so far. I am focusing on exploring trends pertaining to checkouts for popular materials, publishers, and usage classes over the course of this specific time period. I chose these trends because they provide valuable insights about the preferences of Seattle Public Library patrons, as well as the materials and publishers that are most often checked out at SPL. Analyzing these trends can also provide insights about large-scale societal trends, such as shifts in the preferred medium of reading over the span of a year. This information can be useful not only for the SPL system, but also for researchers and policymakers analyzing literacy-related trends.
 
 ### Summary Information
-
-From 2022-2023 so far, the Seattle Public Library had a total of 9,196,991 checkouts. Of these checkouts, 55.9% were digital materials and 44.1% were physical materials. These percentages can help the library better understand the preferences of their patrons and can improve future development decisions. The month with the highest number of checkouts was January 2023, with 269,816 checkouts, while the lowest number of checkouts was in December 2022, with 212,354 books checked out. This information can help the library identify popular usage times and plan staffing and resource allocation accordingly.
+``````{r, echo = FALSE, warning = FALSE, message = FALSE}
+source("summary.R")
+```
+From 2022-2023 so far, the Seattle Public Library had a total of `r summary_info$total_checkouts` checkouts. Of these checkouts, `r summary_info$digital_pct`% were digital materials and `r summary_info$physical_pct`% were physical materials. These percentages can help the library better understand the preferences of their patrons and can improve future development decisions. The month with the highest number of checkouts was January 2023, with `r summary_info$max_books` checkouts, while the lowest number of checkouts was in December 2022, with `r summary_info$min_books` books checked out. This information can help the library identify popular usage times and plan staffing and resource allocation accordingly.
 
 ### The Dataset
 
